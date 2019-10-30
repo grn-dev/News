@@ -1,4 +1,5 @@
 ﻿using News.Domain.Contract.DataBase;
+using News.Domain.Entity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace News.DateBase.ef.repositories
 {
-    public class BaseRepositori<T>: IBaseRepositori<T> where T : class,new()//what
+    public class BaseRepositori<TEntity,Tkey>: IBaseRepositori<TEntity,Tkey> where TEntity : BaseEntity<Tkey>,new()//what
     {
         protected readonly NewsContext _ctx;//what is not private
         public BaseRepositori(NewsContext ctx)
@@ -15,9 +16,10 @@ namespace News.DateBase.ef.repositories
             _ctx = ctx;
         }
 
-        public void Add(T entity)
+        public void Add(TEntity entity)
         {
-            _ctx.Set<T>().Add(entity);
+            
+            _ctx.Set<TEntity>().Add(entity);
 
             /*
             without class  => where T : class,new()
@@ -26,15 +28,20 @@ namespace News.DateBase.ef.repositories
             _ctx.SaveChanges();
         }
 
-        public void delete(int entity)
+        
+
+
+
+        public void delete(Tkey entity)
         {
             throw new NotImplementedException();
         }
 
-        public void update(T entity)
+        
+
+        public void update(TEntity entity)
         {
             throw new NotImplementedException();
-            
         }
     }
 }

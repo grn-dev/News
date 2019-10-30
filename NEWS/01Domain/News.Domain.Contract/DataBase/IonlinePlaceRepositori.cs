@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 
 namespace News.Domain.Contract.DataBase
 {
-    public interface IonlinePlaceRepositori: IBaseRepositori<OnlinePlace>
+    public interface IonlinePlaceRepositori: IBaseRepositori<OnlinePlace,int>
     {
+
 
     }
 }
