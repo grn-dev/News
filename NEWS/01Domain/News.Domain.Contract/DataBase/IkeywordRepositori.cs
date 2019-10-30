@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace News.Domain.Contract.DataBase
 {
-    public interface IkeywordRepositori:IBaseRepositori<Keyword>
+    public interface IkeywordRepositori:IBaseRepositori<Keyword,int>
     {
     //    void Add(Keyword keyword);
     //    void update(Keyword keyword);//bool
