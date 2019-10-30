@@ -61,7 +61,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="repositories\BaseRepositori.cs" />
     <Compile Include="repositories\categoriRepositori.cs" />
+    <Compile Include="repositories\CommentRepositori.cs" />
+    <Compile Include="repositories\ContentRepositori.cs" />
     <Compile Include="repositories\KeywordRepositori.cs" />
+    <Compile Include="repositories\NewsfileRepositori.cs" />
     <Compile Include="repositories\OnlinePlaceRepositori.cs" />
   </ItemGroup>
   <ItemGroup>

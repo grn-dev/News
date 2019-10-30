@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace News.DateBase.ef.repositories
 {
-    public class OnlinePlaceRepositori:BaseRepositori<OnlinePlace,int>, IonlinePlaceRepositori
+    public class CommentRepositori:BaseRepositori<Comment,int>, ICommentRepositori
     {
-        public OnlinePlaceRepositori(NewsContext ctx) : base(ctx)
-        { 
-            
+        // I dont know
+        public CommentRepositori(NewsContext ctx) : base(ctx)
+        {
 
         }
-        
+
     }
 }

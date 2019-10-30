@@ -43,7 +43,10 @@
   <ItemGroup>
     <Compile Include="DataBase\IBaseRepositori.cs" />
     <Compile Include="DataBase\IcategoriRepositori.cs" />
+    <Compile Include="DataBase\ICommentRepositori.cs" />
+    <Compile Include="DataBase\IcontentRepositori.cs" />
     <Compile Include="DataBase\IkeywordRepositori.cs" />
+    <Compile Include="DataBase\INewsFileRepositori.cs" />
     <Compile Include="DataBase\IonlinePlaceRepositori.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SearchContext\BaseSearchContext.cs" />

@@ -8,7 +8,8 @@ using System.Threading.Tasks;
 
 namespace News.DateBase.ef.repositories
 {
-    public class BaseRepositori<TEntity,Tkey>: IBaseRepositori<TEntity,Tkey> where TEntity : BaseEntity<Tkey>,new()//what
+    public class BaseRepositori<TEntity,Tkey>: IBaseRepositori<TEntity,Tkey> 
+        where TEntity : BaseEntity<Tkey>,new()//what
     {
         protected readonly NewsContext _ctx;//what is not private
         public BaseRepositori(NewsContext ctx)
@@ -35,6 +36,7 @@ namespace News.DateBase.ef.repositories
         public void delete(Tkey entity)
         {
             throw new NotImplementedException();
+            //TODO
         }
 
         
@@ -42,6 +44,7 @@ namespace News.DateBase.ef.repositories
         public void update(TEntity entity)
         {
             throw new NotImplementedException();
+            //TODO
         }
     }
 }

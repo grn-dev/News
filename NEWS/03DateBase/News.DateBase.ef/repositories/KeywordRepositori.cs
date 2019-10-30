@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace News.DateBase.ef.repositories
 {
-    public class KeywordRepositori : BaseRepositori<Keyword>, IkeywordRepositori
+    public class KeywordRepositori : BaseRepositori<Keyword,int>, IkeywordRepositori
     {
         //private readonly NewsContext _ctx;
         //ba public error
