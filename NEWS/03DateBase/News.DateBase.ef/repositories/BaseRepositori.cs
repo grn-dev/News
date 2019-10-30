@@ -37,6 +37,15 @@ namespace News.DateBase.ef.repositories
         {
             throw new NotImplementedException();
             //TODO
+            /**/
+            //_ctx.Set<TEntity>().Add(entity);
+            _ctx.
+                
+                Set<TEntity>().Remove().ID
+
+
+
+
         }
 
         
