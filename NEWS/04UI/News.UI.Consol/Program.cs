@@ -12,7 +12,7 @@ namespace News.UI.Consol
     class Program
     {
         static void Main(string[] args)
-        {
+         {
             using (var ctx = new NewsContext())
             {
                 IkeywordRepositori repo = new KeywordRepositori(ctx);

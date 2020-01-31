@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace News.Domain.Contract.DataBase
 {
-    public interface IcategoriRepositori:IBaseRepositori<Categori,int>
+    public interface IcategoriRepositori:IBaseRepositori<Categori>
     {
         /*void Add(Categori categori);
         void update(Categori categori);//bool

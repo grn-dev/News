@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "News.DateBase.ef", "03DateB
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "News.UI.Consol", "04UI\News.UI.Consol\News.UI.Consol.csproj", "{53BB0AE6-5E55-4798-B268-98F2EB6BC446}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "News.Ui.Web", "04UI\News.Ui.Web\News.Ui.Web.csproj", "{D3083912-36CD-47DF-85F8-B6A29B4D054B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,10 @@ Global
 		{53BB0AE6-5E55-4798-B268-98F2EB6BC446}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53BB0AE6-5E55-4798-B268-98F2EB6BC446}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53BB0AE6-5E55-4798-B268-98F2EB6BC446}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3083912-36CD-47DF-85F8-B6A29B4D054B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3083912-36CD-47DF-85F8-B6A29B4D054B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3083912-36CD-47DF-85F8-B6A29B4D054B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3083912-36CD-47DF-85F8-B6A29B4D054B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +56,7 @@ Global
 		{061C20A4-AD16-4140-82E0-858BDFA0442E} = {3D4A6FFF-F70F-44A1-8838-EBB1C79260EB}
 		{ADF4E8BC-C1E0-42AE-A615-8BDEB09BFB01} = {94E5F3A9-E09D-4EFF-A1D9-BA88060F16B0}
 		{53BB0AE6-5E55-4798-B268-98F2EB6BC446} = {B643CCA9-7B9D-4B5F-B16B-5D779A7780B0}
+		{D3083912-36CD-47DF-85F8-B6A29B4D054B} = {B643CCA9-7B9D-4B5F-B16B-5D779A7780B0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7E67EC06-DA5D-49A1-9CCF-86ECAE6AA3DE}

@@ -8,26 +8,11 @@ using System.Threading.Tasks;
 
 namespace News.DateBase.ef.repositories
 {
-    public class categoriRepositori : BaseRepositori<Categori,int>,IcategoriRepositori
+    public class categoriRepositori : BaseRepositori<Categori>,IcategoriRepositori
     {
         public categoriRepositori(NewsContext ctx) : base(ctx)
         {
             ///_ctx = ctx;
-        }
-
-        public void Add(Categori entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void delete(int entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void update(Categori entity)
-        {
-            throw new NotImplementedException();
         }
 
         /*public void Add(Categori categori)
