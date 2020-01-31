@@ -31,6 +31,14 @@ namespace News.DateBase.ef.repositories
             throw new NotImplementedException();
         }
 
+        public List<T> GetAll()
+        {
+            //throw new NotImplementedException();
+            return _ctx.Set<T>().ToList();
+                //Keywords.ToList();
+
+        }
+
         public void update(T entity)
         {
             throw new NotImplementedException();

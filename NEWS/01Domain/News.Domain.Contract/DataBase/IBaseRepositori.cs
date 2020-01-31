@@ -14,6 +14,7 @@ namespace News.Domain.Contract.DataBase
         void Add(T entity);
         void update(T entity);//bool
         void delete(int entity);// becayse all id has id if dontkhow maybe id defining generic
-    
+        List<T> GetAll();//TEntity
+
     }
 }
