@@ -18,6 +18,7 @@ namespace News.Ui.Web.Areas.Admin.Controllers
         {
            //var keylist = keywordRepositori.GetAll();
            return View(); //keylist
+           // return View("~/Views/Shared/_AdminLayout.cshtml");
         }
     }
 }
