@@ -9,6 +9,9 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using News.DateBase.ef;
+using News.DateBase.ef.repositories;
+using News.Domain.Contract.DataBase;
 
 namespace News.Ui.Web
 {
@@ -27,6 +30,9 @@ namespace News.Ui.Web
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
+
+                services.AddScoped<NewsContext, NewsContext>();
+                services.AddScoped<IkeywordRepositori, KeywordRepositori>();
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });

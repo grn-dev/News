@@ -12,7 +12,12 @@ namespace News.Ui.Web.Areas.Admin.Controllers
     {
         //Ikeywordrepository _ikeywordrepository;
 
-        //IkeywordRepositori keywordRepositori;
+        IkeywordRepositori _keywordRepositori;
+
+        public KeywordController(IkeywordRepositori keywordRepositori)
+        {
+            _keywordRepositori = keywordRepositori;
+        }
 
         public IActionResult Index()
         {

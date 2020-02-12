@@ -10,7 +10,7 @@ namespace News.DateBase.ef
 {
     public class NewsContext:DbContext
     {
-        public NewsContext():base("cnn")
+        public NewsContext():base("cnn")//change  33:35s
         {
 
         }
