@@ -7,12 +7,11 @@ using News.Domain.Contract.DataBase;
 
 namespace News.Ui.Web.Areas.Admin.Controllers
 {
-    [Area ("admin")]
+    [Area ("Admin")]
     public class KeywordController : Controller
     {
         //Ikeywordrepository _ikeywordrepository;
-
-        IkeywordRepositori _keywordRepositori;
+        private readonly IkeywordRepositori _keywordRepositori;
 
         public KeywordController(IkeywordRepositori keywordRepositori)
         {
@@ -21,8 +20,8 @@ namespace News.Ui.Web.Areas.Admin.Controllers
 
         public IActionResult Index()
         {
-           //var keylist = keywordRepositori.GetAll();
-           return View(); //keylist
+           var keylist = _keywordRepositori.GetAll();
+           return View(keylist); //keylist
            // return View("~/Views/Shared/_AdminLayout.cshtml");
         }
     }

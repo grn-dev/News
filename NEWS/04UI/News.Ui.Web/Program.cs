@@ -14,7 +14,20 @@ namespace News.Ui.Web
     {
         public static void Main(string[] args)
         {
-            CreateWebHostBuilder(args).Build().Run();
+
+            try
+            {
+                CreateWebHostBuilder(args).Build().Run();
+            }
+            catch (Exception ex)
+            {
+                string d=ex.Message;
+                string d1 = ex.Data.ToString();
+                string d2 = ex.StackTrace.ToString();
+
+                throw;
+            }
+            
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>

@@ -10,9 +10,10 @@ namespace News.DateBase.ef
 {
     public class NewsContext:DbContext
     {
-        public NewsContext():base("cnn")//change  33:35s
+        //public NewsContext():base(@"Integrated Security=SSPI;Initial Catalog=News;DataSource=./DESKTOP-KDDH25H")//change  33:35s
+        public NewsContext():base(@"Integrated Security=SSPI;Initial Catalog=News;DataSource=./DESKTOP-KDDH25H")//change  33:35s
         {
-
+             
         }
         public DbSet<Keyword> Keywords { get; set; }
         public DbSet<Categori> Categoris { get; set; }
